@@ -11,25 +11,10 @@ alias ls="ls -G"
 alias la="ls -oa"
 
 # web dev stuff
-alias chrm="open /Applications/Google\ Chrome.app 'http://localhost:8000/'"
 alias be="bundle exec"
 alias a="antwort"
 alias mm="middleman"
-alias redison="redis-server /usr/local/etc/redis.conf"
-alias redisoff="redis-cli -h 127.0.0.1 -p 6379 shutdown"
 alias subl="sublime"
-
-# database shortcuts
-alias msqlon="mysql.server start"
-alias msqloff="mysql.server stop"
-alias psqlon="pg_ctl -D /usr/local/var/postgres -l logfile start"
-alias psqloff="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
-alias psqlprocess="ps auxwww | grep postgres"
-alias mongostart="brew services start mongodb"
-alias mongostop="brew services stop mongodb"
-
-# be nice
-alias please=sudo
 
 # Git Shortcuts for the super lazy
 alias g="git"
