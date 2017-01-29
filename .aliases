@@ -11,6 +11,7 @@ alias ls="ls -G"
 alias la="ls -oa"
 
 # web dev stuff
+alias dc="docker-compose"
 alias be="bundle exec"
 alias a="antwort"
 alias mm="middleman"
