@@ -29,14 +29,6 @@ Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://gi
     autoload -U promptinit; promptinit
     prompt pure
     ```
-  - **[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)**
-
-    Install
-
-    ```
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-    ```
-
   - **[z jumper](https://github.com/rupa/z)**
 
     Lets me jump around in history without knowing/typing entire path, for example:
