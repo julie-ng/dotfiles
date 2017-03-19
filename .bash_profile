@@ -7,7 +7,7 @@ export PATH="$PATH:`yarn global bin`"
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
-	[ -r "$file" ] && source "$file"
+  [ -r "$file" ] && source "$file"
 done
 unset file
 
@@ -21,6 +21,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="./bin:$PATH"
 
 # bash-completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#   . $(brew --prefix)/etc/bash_completion
+# fi

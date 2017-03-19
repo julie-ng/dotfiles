@@ -1,14 +1,52 @@
 # Julie's dotfiles.
 
-Cloned, striped and modified from [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles/).
+Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles/) with some further customizations:
 
-This repo is just for me and functions as a basic backup of my shortcuts, etc.
+## Install
 
-### Major differences
-I removed anything I don't use or fully understand.
-  * Removed vim
-  * Removed osx defaults
-  * Removed installed dependencies
+1. Clone this repository
+2. Run `./sync.sh` and confirm deletion of existing files when prompted.
 
-### Shell
+## Customizations
+
   * My `.bash_prompt` based on [@necolas dotfiles](https://github.com/necolas/dotfiles/blob/master/bash/bash_prompt). I found it to be neater and easier to understand.
+
+### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+### [pure](https://github.com/sindresorhus/pure) prompt
+
+Install
+
+```
+yarn global add pure-prompt
+```
+
+Then load files in `.zshrc`
+
+```
+fpath=( "$HOME/.zfunctions" $fpath )
+ZSH_THEME=""
+
+# Load pure
+autoload -U promptinit; promptinit
+prompt pure
+```
+
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+Install
+
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+### [z jumper](https://github.com/rupa/z) script
+
+Lets me jump around in history without knowing/typing entire path, for example:
+
+```
+$ z dotfiles
+
+# Hit Tab, Enter and you're there
+$ ~/Code/dotfiles
+```
