@@ -22,3 +22,5 @@
 	log = true
 [mergetool]
   keepBackup = true
+[core]
+  pager = less -iXFR
