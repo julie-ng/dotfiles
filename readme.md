@@ -9,44 +9,41 @@ Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://gi
 
 ## Customizations
 
-  * My `.bash_prompt` based on [@necolas dotfiles](https://github.com/necolas/dotfiles/blob/master/bash/bash_prompt). I found it to be neater and easier to understand.
+  - **`.bash_prompt`** based on [@necolas dotfiles](https://github.com/necolas/dotfiles/blob/master/bash/bash_prompt). I found it to be neater and easier to understand.
+  - **[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)**
+  - **[pure prompt](https://github.com/sindresorhus/pure)**
 
-### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+    Install
 
-### [pure](https://github.com/sindresorhus/pure) prompt
+    ```
+    yarn global add pure-prompt
+    ```
 
-Install
+    Then load files in `.zshrc`
 
-```
-yarn global add pure-prompt
-```
+    ```
+    fpath=( "$HOME/.zfunctions" $fpath )
+    ZSH_THEME=""
 
-Then load files in `.zshrc`
+    # Load pure
+    autoload -U promptinit; promptinit
+    prompt pure
+    ```
+  - **[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)**
 
-```
-fpath=( "$HOME/.zfunctions" $fpath )
-ZSH_THEME=""
+    Install
 
-# Load pure
-autoload -U promptinit; promptinit
-prompt pure
-```
+    ```
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
 
-### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+  - **[z jumper](https://github.com/rupa/z)**
 
-Install
+    Lets me jump around in history without knowing/typing entire path, for example:
 
-```
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
+    ```
+    $ z dotfiles
 
-### [z jumper](https://github.com/rupa/z) script
-
-Lets me jump around in history without knowing/typing entire path, for example:
-
-```
-$ z dotfiles
-
-# Hit Tab, Enter and you're there
-$ ~/Code/dotfiles
-```
+    # Hit Tab, Enter and you're there
+    $ ~/Code/dotfiles
+    ```
