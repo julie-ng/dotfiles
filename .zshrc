@@ -92,6 +92,9 @@ source $ZSH/oh-my-zsh.sh
 # Load default dotfiles
 source ~/.bash_profile
 
+# Use rbenv instead of local ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+
 # Use pure https://github.com/sindresorhus/pure
 fpath=( "$HOME/.zfunctions" $fpath )
 ZSH_THEME=""
