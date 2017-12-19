@@ -1,8 +1,8 @@
 # default PATH
 export PATH="/usr/local/bin:$PATH"
 
-# yarn - faster than npm
-export PATH="$HOME/.yarn/bin:$PATH"
+# include user bin path
+export PATH="$HOME/bin:$PATH"
 
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
