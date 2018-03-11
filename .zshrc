@@ -8,6 +8,7 @@ export ZSH=/Users/julieng/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 
 # Hide username in prompt
 DEFAULT_USER="julieng"
@@ -95,10 +96,23 @@ source ~/.bash_profile
 # Use rbenv instead of local ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-# Use pure https://github.com/sindresorhus/pure
 fpath=( "$HOME/.zfunctions" $fpath )
-ZSH_THEME=""
 
-# Load pure
-autoload -U promptinit; promptinit
-prompt pure
+ # -- Spacespace theme --
+
+# Make prompt like pure prompt
+SPACESHIP_CHAR_SYMBOL="❯"
+SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_PACKAGE_SHOW="false"
+SPACESHIP_DIR_COLOR="blue"
+
+# removes 'on'
+SPACESHIP_GIT_PREFIX=""
+
+# remove git symbol
+SPACESHIP_GIT_BRANCH_PREFIX=""
+
+SPACESHIP_GIT_BRANCH_COLOR="black"
+SPACESHIP_GIT_STATUS_COLOR="black"
+SPACESHIP_GIT_STATUS_PREFIX=" ["
+SPACESHIP_GIT_STATUS_SUFFIX="]"
