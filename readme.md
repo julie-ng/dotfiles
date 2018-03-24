@@ -9,33 +9,31 @@ Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://gi
 
 ## Customizations
 
-  - **`.bash_prompt`** based on [@necolas dotfiles](https://github.com/necolas/dotfiles/blob/master/bash/bash_prompt). I found it to be neater and easier to understand.
-  - **[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)**
-  - **[pure prompt](https://github.com/sindresorhus/pure)**
+![Preview](./screenshot.png)
 
-    Install
+### [zsh](https://github.com/robbyrussell/oh-my-zsh) 
+  
+I have customiezed **[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)** [🚀 spaceship](https://github.com/denysdovhan/spaceship-prompt) theme to look like the [pure prompt](https://github.com/sindresorhus/pure) I previously used, but discarded because it [mangled pinentry prompts](https://github.com/sindresorhus/pure/issues/366).
 
-    ```
-    yarn global add pure-prompt
-    ```
+Then load files in `.zshrc`
 
-    Then load files in `.zshrc`
+```
+fpath=( "$HOME/.zfunctions" $fpath )
+ZSH_THEME="spaceship"
 
-    ```
-    fpath=( "$HOME/.zfunctions" $fpath )
-    ZSH_THEME=""
+# Load pure
+autoload -U promptinit; promptinit
+prompt spaceship
+```
 
-    # Load pure
-    autoload -U promptinit; promptinit
-    prompt pure
-    ```
-  - **[z jumper](https://github.com/rupa/z)**
+### [z jumper](https://github.com/rupa/z)
+  
 
-    Lets me jump around in history without knowing/typing entire path, for example:
+Lets me [jump around in history without knowing/typing entire path](https://github.com/rupa/z), for example:
 
-    ```
-    $ z dotfiles
+```
+$ z dotfiles
 
-    # Hit Tab, Enter and you're there
-    $ ~/Code/dotfiles
-    ```
+# Hit Tab, Enter and you're there
+$ ~/Code/dotfiles
+```
