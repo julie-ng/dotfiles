@@ -1,4 +1,4 @@
-# Julie's dotfiles.
+# Julie's dotfiles
 
 Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles/) with some further customizations:
 
@@ -13,18 +13,7 @@ Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://gi
 
 ### [zsh](https://github.com/robbyrussell/oh-my-zsh) 
   
-I have customiezed **[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)** [🚀 spaceship](https://github.com/denysdovhan/spaceship-prompt) theme to look like the [pure prompt](https://github.com/sindresorhus/pure) I previously used, but discarded because it [mangled pinentry prompts](https://github.com/sindresorhus/pure/issues/366).
-
-Then load files in `.zshrc`
-
-```
-fpath=( "$HOME/.zfunctions" $fpath )
-ZSH_THEME="spaceship"
-
-# Load pure
-autoload -U promptinit; promptinit
-prompt spaceship
-```
+I have customized **[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)** [🚀 spaceship](https://github.com/denysdovhan/spaceship-prompt) theme to look like the [pure prompt](https://github.com/sindresorhus/pure) I previously used, but discarded because it [mangled pinentry prompts](https://github.com/sindresorhus/pure/issues/366).
 
 ### [z jumper](https://github.com/rupa/z)
   
