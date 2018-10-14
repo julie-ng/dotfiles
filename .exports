@@ -8,6 +8,9 @@ export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
+# Use rbenv instead of local ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+
 # for sinatra
 export RACK_ENV="development"
 

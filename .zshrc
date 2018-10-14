@@ -93,9 +93,6 @@ source $ZSH/oh-my-zsh.sh
 # Load default dotfiles
 source ~/.bash_profile
 
-# Use rbenv instead of local ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
-
 fpath=( "$HOME/.zfunctions" $fpath )
 
  # -- Spacespace theme --
