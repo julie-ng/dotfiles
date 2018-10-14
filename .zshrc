@@ -95,7 +95,7 @@ source ~/.bash_profile
 
 fpath=( "$HOME/.zfunctions" $fpath )
 
- # -- Spacespace theme --
+# -- Spacespace theme --
 
 # Make prompt like pure prompt
 SPACESHIP_CHAR_SYMBOL="❯"
