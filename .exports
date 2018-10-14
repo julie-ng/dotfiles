@@ -8,12 +8,23 @@ export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
+# --- Ruby ---
+
 # Use rbenv instead of local ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 # for sinatra
 export RACK_ENV="development"
 
-# for python
+# --- Node ---
+
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+
+# --- Python ---
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# use brew installed python
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
