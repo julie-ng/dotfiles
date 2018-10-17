@@ -24,3 +24,5 @@
   keepBackup = true
 [core]
   pager = less -iXFR
+[commit]
+  gpgsign = true
