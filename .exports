@@ -19,7 +19,7 @@ export RACK_ENV="development"
 # --- Node ---
 
 export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
+# . "/usr/local/opt/nvm/nvm.sh"
 
 # --- Python ---
 
