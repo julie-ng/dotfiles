@@ -4,6 +4,10 @@ export PATH="/usr/local/bin:$PATH"
 # include user bin path
 export PATH="$HOME/bin:$PATH"
 
+# git-credential-netrc needs perl inteface for git
+# fix perl location that was moved in OS X Mojave
+export PERLLIB=/Library/Developer/CommandLineTools/usr/share/git-core/perl:$PERLLIB
+
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.{extra,exports,aliases,functions}; do
