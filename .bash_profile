@@ -16,7 +16,7 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
-. ~/code/z/z.sh
+. ~/bin/z/z.sh
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
