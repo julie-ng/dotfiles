@@ -1,6 +1,6 @@
 # Julie's dotfiles
 
-Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles/) with some further customizations:
+Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles/) with some further customizations.
 
 ## Install
 
@@ -10,6 +10,14 @@ Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://gi
 ## Customizations
 
 ![Preview](./screenshot.png)
+
+### Powerline Fonts
+
+https://github.com/powerline/fonts
+
+### Color Theme - Argonaut
+
+### VS Code Settings
 
 ### [zsh](https://github.com/robbyrussell/oh-my-zsh) 
   
