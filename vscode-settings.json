@@ -1,0 +1,60 @@
+{
+	"workbench.colorTheme": "One Monokai",
+	"workbench.colorCustomizations": {
+			"[One Monokai]": {}
+	},
+	"editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontSize": 14,
+	"editor.minimap.enabled": false,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"files.exclude": {
+			"_site": true,
+			"**/.DS_Store": true,
+			"**/.git": true,
+			"**/.hg": true,
+			"**/.sass-cache": true,
+			"**/.svn": true,
+			"**/CVS": true,
+			"**/node_modules": true
+	},
+	"files.trimTrailingWhitespace": true,
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.fontWeight": "400",
+	"terminal.integrated.fontWeightBold": "500",
+	"terminal.integrated.lineHeight": 1.2,
+	"workbench.iconTheme": "material-icon-theme",
+	"window.zoomLevel": 0,
+	"sublimeTextKeymap.promptV3Features": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.snippetSuggestions": "top",
+	"editor.formatOnPaste": false,
+	"files.associations": {
+			"*.tmpl": "html",
+			"*.html.erb": "html"
+	},
+	"merge-conflict.codeLens.enabled": false,
+	"merge-conflict.decorators.enabled": false,
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+	"files.hotExit": "off",
+	"editor.wordWrap": "on",
+	"window.openFoldersInNewWindow": "on",
+	"[markdown]": {
+			"files.trimTrailingWhitespace": false
+	},
+	"emmet.showAbbreviationSuggestions": false,
+	"javascript.updateImportsOnFileMove.enabled": "never",
+	"plantuml.render": "PlantUMLServer",
+	"plantuml.server": "http://localhost:8080",
+	"plantuml.exportOutDir": ".",
+	"plantuml.exportFormat": "png",
+	"plantuml.exportSubFolder": false,
+	"search.exclude": {
+			"**/docs": true
+	},
+	"breadcrumbs.enabled": false,
+	"workbench.editor.showTabs": true,
+	"editor.renderIndentGuides": true,
+	"editor.renderWhitespace": "none"
+}
