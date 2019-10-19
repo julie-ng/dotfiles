@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/julieng/.oh-my-zsh
+export ZSH=/Users/jng/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -11,7 +11,7 @@ export ZSH=/Users/julieng/.oh-my-zsh
 ZSH_THEME="spaceship"
 
 # Hide username in prompt
-DEFAULT_USER="julieng"
+DEFAULT_USER="jng"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
