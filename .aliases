@@ -12,7 +12,7 @@ alias la="ls -oa"
 
 alias dc="docker-compose"
 alias be="bundle exec"
-alias subl="sublime"
+alias kc="kubectl"
 
 # Git Shortcuts for the super lazy
 alias g="git"
