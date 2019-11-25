@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Load default dotfiles
 source ~/.bash_profile
-
+eval "$(rbenv init -)"
 fpath=( "$HOME/.zfunctions" $fpath )
 
 # -- Spacespace theme --
