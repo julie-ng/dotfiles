@@ -13,6 +13,7 @@ alias la="ls -oa"
 alias dc="docker-compose"
 alias be="bundle exec"
 alias k="kubectl"
+alias tf="terraform"
 
 # Git Shortcuts for the super lazy
 alias g="git"
