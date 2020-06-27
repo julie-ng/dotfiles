@@ -14,6 +14,7 @@ alias dc="docker-compose"
 alias be="bundle exec"
 alias k="kubectl"
 alias tf="terraform"
+alias reload="source ~/.zshrc"
 
 # Git Shortcuts for the super lazy
 alias g="git"
