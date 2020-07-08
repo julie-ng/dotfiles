@@ -25,5 +25,10 @@ alias lp="git lp"
 # Azure CLI
 alias azsubs="az account list --query \"[].{name:name, subscriptionId:id}\""
 
+# terraform
+
+alias tfplan="terraform plan -out out.tfplan"
+alias tfapply="terraform apply out.tfplan"
+
 # File size
 alias fs="stat -f \"%z bytes\""
