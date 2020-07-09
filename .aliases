@@ -27,8 +27,8 @@ alias azsubs="az account list --query \"[].{name:name, subscriptionId:id}\""
 
 # terraform
 
-alias tfplan="terraform plan -out out.tfplan"
-alias tfapply="terraform apply out.tfplan"
+alias tfplan="terraform plan -out plan.tfplan"
+alias tfapply="terraform apply plan.tfplan"
 
 # File size
 alias fs="stat -f \"%z bytes\""
