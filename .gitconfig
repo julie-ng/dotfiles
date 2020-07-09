@@ -26,3 +26,5 @@
   pager = less -iXFR
 [commit]
   gpgsign = true
+[pull]
+  rebase = false
