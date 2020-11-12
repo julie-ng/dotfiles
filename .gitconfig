@@ -3,28 +3,28 @@
 [apply]
 	whitespace = fix
 [alias]
-  co = checkout
-  add = add -a
-  ca = commit -am
-  cm = commit -m
-  st = status -s
-  dif = diff
-  difc = diff --color-words
-  lp  = log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cd)%Creset' --abbrev-commit --date=rfc
-  lpu = log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset - %C(magenta)%cn%Creset' --abbrev-commit --date=relative
-  lpn = log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset - %C(magenta)%cn%Creset' --abbrev-commit --date=relative -n
-  lpd = log --pretty=format:'%Cgreen%cd%Creset %Cred%h%Creset %C(yellow)%d%Creset %s' --abbrev-commit --date=short
-  logg = log --grep
-  log-tree= log --graph --oneline --decorate --all
+	co = checkout
+	add = add -a
+	ca = commit -am
+	cm = commit -m
+	st = status -s
+	dif = diff
+	difc = diff --color-words
+	lp  = log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cd)%Creset' --abbrev-commit --date=rfc
+	lpu = log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset - %C(magenta)%cn%Creset' --abbrev-commit --date=relative
+	lpn = log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset - %C(magenta)%cn%Creset' --abbrev-commit --date=relative -n
+	lpd = log --pretty=format:'%Cgreen%cd%Creset %Cred%h%Creset %C(yellow)%d%Creset %s' --abbrev-commit --date=short
+	logg = log --grep
+	log-tree= log --graph --oneline --decorate --all
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [merge]
 	log = true
 [mergetool]
-  keepBackup = true
+	keepBackup = true
 [core]
-  pager = less -iXFR
+	pager = less -iXFR
 [commit]
-  gpgsign = true
+	gpgsign = true
 [pull]
-  rebase = false
+	rebase = false
