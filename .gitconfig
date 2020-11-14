@@ -17,7 +17,7 @@
 	logg = log --grep
 	log-tree= log --graph --oneline --decorate --all
 [credential]
-	helper = osxkeychain
+	helper = netrc -f ~/.netrc.gpg -v
 [merge]
 	log = true
 [mergetool]
