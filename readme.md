@@ -34,3 +34,23 @@ $ z dotfiles
 # Hit Tab, Enter and you're there
 $ ~/Code/dotfiles
 ```
+
+## Mac Adjustments
+
+### Git - Disable OS X Keychain
+
+Mac OS by default wants to use the OS X keychain. But I want to use `git-credential-netr`. So create a blank config to override system default:
+
+```
+touch /usr/local/etc/gitconfig
+```
+
+Yep, it's supposed to be empty.
+
+### Big Sur 🤦‍♀️
+
+After every tiny OS update, need to re-run:
+
+```
+xcode-select --install
+```
