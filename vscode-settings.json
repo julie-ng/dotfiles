@@ -37,7 +37,6 @@
 	},
 	"merge-conflict.codeLens.enabled": false,
 	"merge-conflict.decorators.enabled": false,
-	"debug.javascript.codelens.npmScripts": "never",
 	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
 	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
 	"files.hotExit": "off",
