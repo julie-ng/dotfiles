@@ -39,7 +39,22 @@ $ ~/Code/dotfiles
 
 ### Git - Disable OS X Keychain
 
-Mac OS by default wants to use the OS X keychain. But I want to use `git-credential-netr`. So create a blank config to override system default:
+Mac OS by default wants to use the OS X keychain. But I want to use `git-credential-netr`. 
+
+Verify problem with
+
+```
+$ git config --system credential.helper
+osxkeychain
+```
+
+Then try
+
+```
+git config --system --unset credential.helper
+```
+
+OR create a blank config to override system default:
 
 ```
 touch /usr/local/etc/gitconfig
