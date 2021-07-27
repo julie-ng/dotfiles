@@ -26,7 +26,6 @@
 	"terminal.integrated.fontWeightBold": "500",
 	"terminal.integrated.lineHeight": 1.2,
 	"workbench.iconTheme": "material-icon-theme",
-	"window.zoomLevel": 0,
 	"sublimeTextKeymap.promptV3Features": true,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.snippetSuggestions": "top",
@@ -37,6 +36,7 @@
 	},
 	"merge-conflict.codeLens.enabled": false,
 	"merge-conflict.decorators.enabled": false,
+	"debug.javascript.codelens.npmScripts": "never",
 	"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
 	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
 	"files.hotExit": "off",
@@ -46,7 +46,8 @@
 			"files.trimTrailingWhitespace": false
 	},
 	"[terraform]": {
-			"editor.tabSize": 2
+			"editor.tabSize": 2,
+			"editor.formatOnSave": true
 	},
 	"emmet.showAbbreviationSuggestions": false,
 	"javascript.updateImportsOnFileMove.enabled": "never",
@@ -61,5 +62,18 @@
 	"breadcrumbs.enabled": false,
 	"workbench.editor.showTabs": true,
 	"editor.renderIndentGuides": true,
-	"editor.renderWhitespace": "none"
+	"editor.renderWhitespace": "none",
+	"markdown.extension.toc.updateOnSave": false,
+	"extensions.ignoreRecommendations": true,
+	"explorer.confirmDragAndDrop": false,
+	"[bicep]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"files.insertFinalNewline": true,
+		"editor.suggestSelection": "first",
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+		"editor.suggest.showWords": false
+	},
+	"security.workspace.trust.enabled": false,
+	"workbench.startupEditor": "none"
 }
