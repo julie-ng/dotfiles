@@ -28,3 +28,8 @@ export LANG=en_US.UTF-8
 
 # use brew installed python
 export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+
+# --- Privacy ---
+
+export DOCKER_SCAN_SUGGEST=false
+export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true
