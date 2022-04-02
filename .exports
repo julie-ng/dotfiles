@@ -12,6 +12,8 @@ export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
 # Use rbenv instead of local ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
+# pg gem issue for m1 macs
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # for sinatra
 export RACK_ENV="development"
