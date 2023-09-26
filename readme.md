@@ -28,11 +28,17 @@ I have customized **[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)** [ðŸ
 
 Lets me [jump around in history without knowing/typing entire path](https://github.com/rupa/z), for example:
 
-```
+```bash
 $ z dotfiles
 
-# Hit Tab, Enter and you're there
-$ ~/Code/dotfiles
+# Hit Tab, Enter 
+$ ~/workspace/dotfiles
+```
+
+[Install z](https://github.com/agkozak/zsh-z#installation) for zsh via
+
+```
+git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 ```
 
 ## Mac Adjustments

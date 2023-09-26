@@ -15,9 +15,6 @@ for file in ~/.{extra,exports,aliases,functions}; do
 done
 unset file
 
-# init z   https://github.com/rupa/z
-. ~/bin/z/z.sh
-
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
