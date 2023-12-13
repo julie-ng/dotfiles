@@ -127,6 +127,7 @@ SPACESHIP_KUBECTL_SUFFIX=""
 
 # remove google cloud
 SPACESHIP_GCLOUD_SHOW="false"
+SPACESHIP_AZURE_SHOW="false"
 
 # zsh syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
