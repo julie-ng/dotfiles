@@ -8,7 +8,6 @@ export ZSH=/Users/jng/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="agnoster"
-ZSH_THEME="spaceship"
 
 # Hide username in prompt
 DEFAULT_USER="jng"
@@ -120,11 +119,18 @@ SPACESHIP_BATTERY_SHOW="false"
 # add kubernetes
 SPACESHIP_KUBECTL_SHOW="true"
 SPACESHIP_KUBECTL_VERSION_SHOW="false"
-SPACESHIP_KUBECONTEXT_SHOW="true"
-SPACESHIP_KUBECONTEXT_NAMESPACE_SHOW="true"
-SPACESHIP_KUBECONTEXT_COLOR="062"
+SPACESHIP_KUBECTL_CONTEXT_SHOW="true"
+SPACESHIP_KUBECTL_CONTEXT_SHOW_NAMESPACE="true"
+SPACESHIP_KUBECTL_CONTEXT_COLOR="062"
 SPACESHIP_KUBECTL_SYMBOL=""
 SPACESHIP_KUBECTL_SUFFIX=""
 
 # remove google cloud
 SPACESHIP_GCLOUD_SHOW="false"
+
+# zsh syntax highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
+
+# Use spaceship theme (must be last)
+source /opt/homebrew/opt/spaceship/spaceship.zsh
