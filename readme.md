@@ -45,7 +45,7 @@ git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/pl
 
 ### Git - Disable OS X Keychain
 
-Mac OS by default wants to use the OS X keychain. But I want to use `git-credential-netr`. 
+Mac OS by default wants to use the OS X keychain. But I want to use [`git-credential-netrc`](https://github.com/git/git/blob/master/contrib/credential/netrc/git-credential-netrc.perl). 
 
 Verify problem with
 
@@ -60,21 +60,7 @@ Then try
 git config --system --unset credential.helper
 ```
 
-OR create a blank config to override system default:
-
-```
-touch /usr/local/etc/gitconfig
-```
-
-Yep, it's supposed to be empty.
-
-### Big Sur 🤦‍♀️
-
-After every tiny OS update, need to re-run:
-
-```
-xcode-select --install
-```
+Then hopefully it uses our [.gitconfig](./.gitconfig)…
 
 ---
 
