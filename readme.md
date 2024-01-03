@@ -75,3 +75,71 @@ After every tiny OS update, need to re-run:
 ```
 xcode-select --install
 ```
+
+---
+
+## GPG Keys
+
+Copy keys to another computer, per [gpg docs on exchanging keys](https://www.gnupg.org/gph/en/manual/x56.html).
+
+- requires passwords for the keys
+- note: this skips `--armour` flag, which creates ascii. 
+
+#### Export Keys
+
+```
+gpg --export <user@email> --output <public.gpg>
+gpg --export-secret-keys <user@email> --output <private.gpg>
+```
+
+#### Import Keys
+
+```
+gpg --import <public.gpg>
+gpg --import <private.gpg>
+```
+
+#### Trust Key
+
+If later using the key there is an erorr message that says 
+
+> "There is no assurance this key belongs to the named user gpg:", 
+
+then run
+
+```
+gpg --list-keys
+gpg --edit-key <KEY_ID>
+gpg> trust
+```
+
+and select 5
+
+```
+1 = I don't know or won't say
+2 = I do NOT trust
+3 = I trust marginally
+4 = I trust fully
+5 = I trust ultimately
+m = back to the main menu
+```
+
+#### Using with `.netrc`
+
+Use case: need to update GitHub API token.
+
+First, decrypt the `.netrc.gpg` into `.netrc`
+
+```
+gpg --decrypt --recipient <user@email> -o .netrc .netrc.gpg
+```
+
+Make changes to `.netrc`
+
+Then re-encrypt to a `.netrc.gpg`
+
+```
+gpg --encrypt --recipient <user@email> -o .netrc.gpg .netrc
+```
+
+Important: don't forget to delete unencrypted `.netrc` file
