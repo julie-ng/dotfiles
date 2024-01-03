@@ -54,7 +54,7 @@ DEFAULT_USER="jng"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git kubectl z)
+plugins=(git kubectl z azure)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,7 +127,11 @@ SPACESHIP_KUBECTL_SUFFIX=""
 
 # remove google cloud
 SPACESHIP_GCLOUD_SHOW="false"
-SPACESHIP_AZURE_SHOW="false"
+SPACESHIP_AZURE_SHOW="true"
+SPACESHIP_AZURE_SYMBOL="☁️  "
+
+# azure cli auto-complete
+source /opt/homebrew/etc/bash_completion.d/az
 
 # zsh syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
