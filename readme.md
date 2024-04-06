@@ -7,39 +7,24 @@ Originally cloned, stripped and modified from [Paul Irish's dotfiles](https://gi
 1. Clone this repository
 2. Run `./sync.sh` and confirm deletion of existing files when prompted.
 
-## Customizations
+## Custom Shell
 
 ![Preview](./screenshot.png)
 
-### Powerline Fonts
 
-https://github.com/powerline/fonts
+### Look and Feel
 
-### Color Theme - Argonaut
+- iTerm Theme: [Argonaut](https://github.com/pwaleczek/Argonaut-theme)
+- Shell: [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- Prompt: [Spaceship](https://github.com/denysdovhan/spaceship-prompt)
+- Font: [Inconsolata](https://fonts.google.com/specimen/Inconsolata), [Inconsolata-g for Powerline](https://github.com/powerline/fonts/tree/master/Inconsolata-g)
 
-### VS Code Settings
 
-### [zsh](https://github.com/robbyrussell/oh-my-zsh) 
-  
-I have customized **[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)** [🚀 spaceship](https://github.com/denysdovhan/spaceship-prompt) theme to look like the [pure prompt](https://github.com/sindresorhus/pure) I previously used, but discarded because it [mangled pinentry prompts](https://github.com/sindresorhus/pure/issues/366).
+### Additional Toools
 
-### [z jumper](https://github.com/rupa/z)
-  
-
-Lets me [jump around in history without knowing/typing entire path](https://github.com/rupa/z), for example:
-
-```bash
-$ z dotfiles
-
-# Hit Tab, Enter 
-$ ~/workspace/dotfiles
-```
-
-[Install z](https://github.com/agkozak/zsh-z#installation) for zsh via
-
-```
-git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
-```
+- [z jumper](https://github.com/rupa/z)
+- [eza](https://github.com/eza-community/eza)
+- [difftastic](https://github.com/wilfred/difftastic)
 
 ## Mac Adjustments
 
@@ -61,8 +46,6 @@ git config --system --unset credential.helper
 ```
 
 Then hopefully it uses our [.gitconfig](./.gitconfig)…
-
----
 
 ## GPG Keys
 
