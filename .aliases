@@ -9,6 +9,7 @@ alias -- -="cd -"
 # List dir contents aliases (http://ss64.com/osx/ls.html)
 alias ls="ls -G"
 alias la="ls -oa"
+alias lza="eza -la"
 
 alias dc="docker-compose"
 alias be="bundle exec"
