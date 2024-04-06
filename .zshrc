@@ -131,7 +131,7 @@ SPACESHIP_AZURE_SHOW="true"
 SPACESHIP_AZURE_SYMBOL="☁️  "
 
 # azure cli auto-complete
-source /opt/homebrew/etc/bash_completion.d/az
+# source /opt/homebrew/etc/bash_completion.d/az
 
 # zsh syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
