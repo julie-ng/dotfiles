@@ -15,3 +15,5 @@ else
 fi
 unset doIt
 source ~/.bash_profile
+
+exit 0
