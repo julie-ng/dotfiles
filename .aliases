@@ -24,8 +24,5 @@ alias st="git st"
 alias cm="git cm"
 alias lp="git lp"
 
-# Azure CLI
-alias azsubs="az account list --query \"[].{name:name, subscriptionId:id}\""
-
 # File size
 alias fs="stat -f \"%z bytes\""
