@@ -14,6 +14,7 @@ alias lza="eza -la"
 alias dc="docker-compose"
 alias be="bundle exec"
 alias k="kubectl"
+alias kunset="kubectl config unset current-context"
 alias tf="terraform"
 alias reload="source ~/.zshrc"
 
