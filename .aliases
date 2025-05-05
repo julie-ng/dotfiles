@@ -11,6 +11,7 @@ alias ls="ls -G"
 alias la="ls -oa"
 alias lza="eza -la"
 
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias dc="docker-compose"
 alias be="bundle exec"
 alias k="kubectl"
