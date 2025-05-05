@@ -52,7 +52,7 @@ Then hopefully it uses our [.gitconfig](./.gitconfig)…
 Copy keys to another computer, per [gpg docs on exchanging keys](https://www.gnupg.org/gph/en/manual/x56.html).
 
 - requires passwords for the keys
-- note: this skips `--armour` flag, which creates ascii. 
+- note: this skips `--armor` flag, which creates ascii.
 
 #### Export Keys
 
